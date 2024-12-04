@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "taro-mobile",
+  "appid": "wx6d13035910b84f98",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
