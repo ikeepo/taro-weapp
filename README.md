@@ -1,9 +1,20 @@
 # Intro
 这是一个**taro+微信小程序**实战样例。学习编程最好的方式，是从头到位搞懂一个大小适中、可实际运行的真实项目。github上开源的案例不多，[taro-mobile](https://github.com/mzh-note/taro-mobile)算是一个。我这里以学习taro-mobile为例，从一个纯粹新手的角度整理出所有疑问。
-# Questions
+# Tutorials
 ### [line-by-line](./tutorials/line-by-line.md)
 ### [general](./tutorials/general.md)
 ### [modules](./tutorials/modules.md)
+# 流程
+### 环境准备
+```shell
+pnpm install
+```
+<details>
+<summary>
+questions
+</summary>
+[为什么是pnpm](./tutorials/general.md#why-pnpm)
+</details>
 
 ####  使用Taro开发的（微信小程序 + H5）
 技术栈 Taro3.6.24 + typescript + react18，所用技术涉及
