@@ -16,6 +16,7 @@ questions
 </summary>
 [为什么是pnpm](./tutorials/general.md#why-pnpm)
 </details>
+[为什么是pnpm](./tutorials/general.md#why-pnpm)
 
 ####  使用Taro开发的（微信小程序 + H5）
 技术栈 Taro3.6.24 + typescript + react18，所用技术涉及
