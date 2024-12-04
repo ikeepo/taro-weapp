@@ -43,6 +43,6 @@ TS解析为JS、JSX解析为HTML也是一样道理；
 因为PropsWithChildren是一个[Utility Types](./lang-spec.md#范型类型-generic-types-vs-实用类型-utility-types).  
 ```any```是一个ts的关键字，表示任意类型；  
 
-
 ### ```const app = Taro.getApp()```
-##### getApp
+##### getApp 
+实例化Taro框架，后续要做的就是调整、填充app里的各种细节，以呈现目标app想要的结果。
