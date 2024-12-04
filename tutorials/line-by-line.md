@@ -46,3 +46,39 @@ TS解析为JS、JSX解析为HTML也是一样道理；
 ### ```const app = Taro.getApp()```
 ##### getApp 
 实例化Taro框架，后续要做的就是调整、填充app里的各种细节，以呈现目标app想要的结果。
+### ```const router = useRouter()```
+##### [useRouter](https://docs.taro.zone/en/docs/hooks/#userouter)
+Taro的Hook，在React原生代码基础上的封装。  
+用于获取当前页面的route信息：路径、参数等。  
+### ```useLaunch((options) => {```
+##### [useLaunch](https://docs.taro.zone/docs/3.x/apis/taro.hooks/useLaunch/)
+小程序初始化完成后的回调函数；  
+参数是一个函数；  
+##### options是哪里传入的数据
+options是一个约定，并非关键字，可以自由换成其他名字；
+
+### ```const code = options.query?.inviteCode || ''```
+##### ？
+可选操作符，避免因为参数没有值而报错。  
+##### ||
+逻辑'或'运算符；  
+### ```Taro.setStorage({```
+##### 这个数据存在哪里？
+视具体程序及运行环境，存在本机；  
+一般是一个键值对结构；  
+
+### ```useDidHide(() => {```
+##### [useDidHide](https://docs.taro.zone/en/docs/hooks/#usedidhide)
+生命周期Hook，处理页面隐藏后的回调；  
+### ```console.log(app.isPreviewShare)```
+##### isPreviewShare
+判断小程序是否处于分享预览中，此状态下可能会限定某些功能等；  
+非React||Taro内置属性，是自定义的；  
+### ```app.isPreviewShareHide = true```
+##### 直接修改实例属性
+是可以实现的，但是不推荐，特别是大型项目，会导致不可知混乱，最好用统一的状态管理。  
+### ```Taro.[getStorage](https://docs.taro.zone/en/docs/apis/storage/getStorage/)({ key: 'user',```
+##### user是内置的一定有的么
+不是，这是用户自定义的
+##### key&success&fail
+key是必须的，其余不是。
