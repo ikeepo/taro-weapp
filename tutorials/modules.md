@@ -1,2 +1,2 @@
 # app.tsx
-### 'mtj-wx-sdk'
+### mtj-wx-sdk
