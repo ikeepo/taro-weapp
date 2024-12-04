@@ -14,8 +14,11 @@ pnpm install
 <summary>
 questions
 </summary>
+
 [为什么是pnpm](./tutorials/general.md#why-pnpm)
+
 </details>
+
 [为什么是pnpm](./tutorials/general.md#why-pnpm)
 
 ####  使用Taro开发的（微信小程序 + H5）
