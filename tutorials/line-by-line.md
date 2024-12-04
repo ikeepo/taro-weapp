@@ -1,4 +1,5 @@
 # app.tsx
+> [Taro API Docs](https://docs.taro.zone/docs/3.x/apis/about/desc)
 ### ```import '@/utils/mtj-wx-sdk'```
 ##### @ 符号
 @一般用于表示当下路径，具体见配置文件。  
@@ -39,7 +40,7 @@ TS解析为JS、JSX解析为HTML也是一样道理；
 ### ```function App({ children }: PropsWithChildren<any>) {```
 ##### PropsWithChildren 
 [PropsWithChildren](./line-by-line.md#propswithchildren)前面已经说了，是一个ts类型；
-##### PropsWithChildren<any>既然是类型为什么要加<any>
+##### ```PropsWithChildren<any>```既然是类型为什么要加```<any>```
 因为PropsWithChildren是一个[Utility Types](./lang-spec.md#范型类型-generic-types-vs-实用类型-utility-types).  
 ```any```是一个ts的关键字，表示任意类型；  
 
@@ -77,8 +78,20 @@ options是一个约定，并非关键字，可以自由换成其他名字；
 ### ```app.isPreviewShareHide = true```
 ##### 直接修改实例属性
 是可以实现的，但是不推荐，特别是大型项目，会导致不可知混乱，最好用统一的状态管理。  
-### ```Taro.[getStorage](https://docs.taro.zone/en/docs/apis/storage/getStorage/)({ key: 'user',```
+### ```Taro.getStorage({ key: 'user',```
 ##### user是内置的一定有的么
 不是，这是用户自定义的
 ##### key&success&fail
-key是必须的，其余不是。
+key是必须的，其余不是。[函数签名](https://docs.taro.zone/en/docs/apis/storage/getStorage/)。
+### ```Taro.login({```
+##### [login](https://docs.taro.zone/docs/3.x/apis/open-api/login/)
+Taro内置函数，获取登录凭证。 
+没有参数是必须的，都是可选；  
+##### 为什么是Taro.login而不是实例化的app.login
+Taro.login不同于app.login，这里涉及到Taro的跨平台设计理念；  
+很多API接口是全局静态方式存在，这样能更好的跨平台使用，不用因为实例化而局限在某个框架，便于保持API的统一；
+可以简单理解为，Taro是在各个小程序上加了一层，能放在这一层全局使用的就放进来。  
+### ```const instance = Taro.getCurrentInstance()```
+##### Instance是页面还是App
+一般是指页面；  
+> 看到这里，需要去把[Taro API](https://docs.taro.zone/docs/3.x/apis/about/desc)过一遍，知道都有些什么功能 
