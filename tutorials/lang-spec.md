@@ -10,3 +10,8 @@ Utility Types以<>接收参数(即其他类型)。
 ## JavaScript
 ##### plain object
 通过{} || new Object()创建的js普通对象，只包含键值对，没有其他的额外功能；  
+## CSS
+##### CSS Modules
+CSS Modules是模块化的CSS，用于在JS中以对象、局部作用域方式调用CSS；  
+类似JSX在JS中写HTML，CSS Modules在JS中写CSS；  
+

@@ -11,3 +11,8 @@ Redux是JS的状态管理库，并非为React专门设计，React在使用Redux�
 A function takes state and action as arguments and return new state.  
 ### [@nutui/nutui-react-taro](https://github.com/jdf2e/nutui-react)
 [京东零售](https://github.com/jdf2e)提供的UI组件库；  
+NutUI React 默认支持 Tree Shaking；  
+Tree Shaking是JS的代码优化技术，指在打包时候删除导入未用代码，降低代码冗余；   
+### [Redux](https://redux.js.org/)
+
+### [create-react-app](https://create-react-app.dev/)

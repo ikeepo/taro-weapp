@@ -19,4 +19,9 @@ tsx是包含JSX的ts；
 > TODO 这个案子中应该在哪里看这个配置，我还没有找到  
 ### ```import {Button} from '@nutui/nutui-react-taro';```
 ##### @nutui/nutui-react-taro
-module
+[module](../../modules.md#nutuinutui-react-taro)
+### ```import styles from './index.module.less'```
+##### index.module.less 是特定规范
+为了启用CSS Modules功能；   
+Webpack等构件工具会根据配置（含有.module关键字）将文件解析为CSS Modules，不然就会当成全局样式；  
+
