@@ -21,6 +21,10 @@ Tree Shaking是JS的代码优化技术，指在打包时候删除导入未用代
 ##### [reducer](https://redux.js.org/introduction/core-concepts)
 A function takes state and action as arguments and return new state.    
 reducer: 状态处理函数，输入是原始状态+动作，输出新状态；名称由来是JS中的reduce，表示多个数据规约为一个数据；Redux中，表示多个状态经过多个动作最后变成一个动作；  
+reducer是pure function，所谓pure是指：   
+1. 相同的输入总是产生相同的输出
+2. 没有副作用，副作用指的是不会修改任何外部变量、全局状态、文件、数据库，没有函数外的任何交互，只影响输出；  
+
 ### [Redux Toolkit](https://redux-toolkit.js.org/)
 ##### [slice](https://redux-toolkit.js.org/api/createSlice)
 A slice is a collection of a specific part of the state and its associated reducers and actions. It essentially represents a modular piece of the Redux store's state and includes both the logic to update that state and the actions used to trigger those updates.  
