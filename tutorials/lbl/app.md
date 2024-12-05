@@ -95,3 +95,13 @@ Taro.login不同于app.login，这里涉及到Taro的跨平台设计理念；
 ##### Instance是页面还是App
 一般是指页面；  
 > 看到这里，需要去把[Taro API](https://docs.taro.zone/docs/3.x/apis/about/desc)过一遍，知道都有些什么功能 
+### ```return <Provider store={store}>{children}</Provider>```
+##### [Provider](https://react-redux.js.org/api/provider)
+[react-redux](./modules.md#react-redux)提供的组件，用于将redux的store传递给整个组件树，传递的结果是子组件可以使用钩子useSelector&useDispatch访问修改全局状态；  
+##### store
+Redux创建的[全局状态容器](https://redux.js.org/usage/configuring-your-store/)；  
+一般是通过createStore和configureStore生成；  
+##### children
+React内置属性，表示子组件树； 
+children不是关键字，只是一个约定，只要是ReactNode就可以；  
+   
