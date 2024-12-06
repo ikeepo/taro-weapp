@@ -1,4 +1,4 @@
-//import "@/utils/mtj-wx-sdk";
+import "@/utils/mtj-wx-sdk";
 import { PropsWithChildren, useState } from "react";
 import Taro, {
   useDidHide,

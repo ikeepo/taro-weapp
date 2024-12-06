@@ -71,7 +71,11 @@ pnpm run dev:h5
 questions
 </summary>
 > App is not defined
-  ⬜
+  删除app.tsx内容,重新复制 
+> Error [object Object] Call Stack
+ rejectionHandler
+  node_modules/.pnpm/@pmmmwh+react-refresh-webpack-plugin@0.5.15_react-refresh@0.11.0_type-fest@2.19.0_webpack-dev_6qlmiz6ng73ct4s3tsv7tkajiq/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/utils/errorEventHandlers.js:46:21
+  未能解决，直接close错误提示，可以看到后面的内容；
 
 </details>
 启动微信小程序
