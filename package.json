@@ -71,7 +71,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@tarojs/cli": "3.6.24",
     "@tarojs/taro-loader": "3.6.24",
     "@tarojs/test-utils-react": "^0.1.1",
