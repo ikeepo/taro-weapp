@@ -8,3 +8,4 @@ node_modules/
 __tests__/
 .idea/
 .env*
+src/utils/mtj-wx-sdk.config.js

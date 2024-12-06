@@ -1,27 +1,27 @@
-import {createSlice} from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 type IInitialStateType = {
-  matchId: number,
-  state: number
-}
+  matchId: number;
+  state: number;
+};
 const initialState = {
   score: {
     matchId: 0,
-    state: 0
-  } as IInitialStateType
-}
+    state: 0,
+  } as IInitialStateType,
+};
 const scoreSlice = createSlice({
-  name: 'score',
+  name: "score",
   initialState,
   reducers: {
     setScore(state, action) {
       state.score = {
         ...state.score,
-        ...action.payload
-      }
-    }
-  }
-})
+        ...action.payload,
+      };
+    },
+  },
+});
 
-export const { setScore } = scoreSlice.actions
-export default scoreSlice.reducer
+export const { setScore } = scoreSlice.actions;
+export default scoreSlice.reducer;

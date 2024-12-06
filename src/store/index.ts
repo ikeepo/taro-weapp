@@ -1,15 +1,15 @@
-import {configureStore} from '@reduxjs/toolkit';
-import userSlice from '@/store/modules/userReducer';
-import scoreSlice from '@/store/modules/scoreReducer';
+import { configureStore } from "@reduxjs/toolkit";
+import userSlice from "@/store/modules/userReducer";
+import scoreSlice from "@/store/modules/scoreReducer";
 
 const store = configureStore({
   reducer: {
     user: userSlice,
-    score: scoreSlice
-  }
-})
+    score: scoreSlice,
+  },
+});
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
-export default store
+export default store;
