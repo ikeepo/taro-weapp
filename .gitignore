@@ -7,5 +7,6 @@ node_modules/
 .swc
 __tests__/
 .idea/
-.env*
+.env.dev
+.env.prod
 src/utils/mtj-wx-sdk.config.js

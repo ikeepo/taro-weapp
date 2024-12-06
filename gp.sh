@@ -16,5 +16,4 @@ git add .
 git commit -m "$message"
 
 # 推送更改到提取的远程仓库和 master 分支
-git push -u $remote_name master
-
+git push -u $remote_name reg-coin-rec
