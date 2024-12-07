@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Taro 3 - Mortgage Calculator",
+  "license": "MIT",
   "templateInfo": {
     "name": "default",
     "typescript": true,
@@ -42,12 +43,12 @@
       "eslint --fix"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
+  #"husky": {
+  #  "hooks": {
+  #    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+  #    "pre-commit": "lint-staged"
+  #  }
+  #},
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@codler/react-native-keyboard-aware-scroll-view": "^2.0.0",
@@ -65,8 +66,8 @@
     "react-dom": "^17.0.2",
     "react-native": "^0.68.2",
     "react-refresh": "^0.14.0",
-    "webpack": "5.69.0",
-    "taro-ui": "^3.0.0-alpha.3"
+    "taro-ui": "^3.0.0-alpha.3",
+    "webpack": "5.69.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
