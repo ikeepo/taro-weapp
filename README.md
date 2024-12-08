@@ -22,3 +22,9 @@ git checkout mortgage-calculator
 ```shell
 git checkout reg-coin-rec
 ```
+
+## 微信小程序开发问题
+
+### Error: MiniProgramError {"errMsg":"navigateTo:fail Error: INVALID_LOGIN,access_token expired [20241208 16:48:44][touristappid]"}
+
+查了半天，网上一点资料也没有，原来是微信小程序开发工具没有登陆导致的。
