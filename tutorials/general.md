@@ -1,5 +1,12 @@
 # question 10
 
+### 重命名 page
+
+1. page 文件夹
+2. app.config.js
+3. navigateTo  
+   修改完成后，页面无法显示，删除 dist 重新编译。
+
 ### why pnpm
 
 一般是通过 pnpm-lock.yaml 判断，此项目使用的是 pnpm。  
