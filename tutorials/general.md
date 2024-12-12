@@ -1,5 +1,18 @@
 # question 10
 
+### 理解 process.env.NODE_ENV
+
+##### process 是 Nodejs 的内置全局对象
+
+process.env 是一个包含用户环境的对象，比如当前用户的 shell，当前用户的路径等等。
+nodejs 是类似浏览器的角色，为 js 提供运行环境，环境中个包含一些全局变量，比如 process；
+
+##### process 并不是 JS 内置对象
+
+但是前端也可以使用 process，通过 webpack 在构建时候替换和注入；  
+通过 DefinePlugin 插件，在构建时候注入；  
+[DefinePlugin](https://webpack.js.org/plugins/define-plugin/)完成的是变量跟具体值的一一匹配关系；
+
 ### 重命名 page
 
 1. page 文件夹
